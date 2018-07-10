@@ -26,10 +26,3 @@ class Converter:
             suffix += array[int(bits)]
 
         return self.short + suffix
-
-
-if __name__ == '__main__':
-    short = '00558000001N0Ke'
-    long = '00558000001N0KeAAK'
-    converter = Converter(short=short)
-    assert converter.convert() == long

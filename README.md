@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/amureki/salesforce_id_converter.svg?branch=master)](https://travis-ci.org/amureki/salesforce_id_converter)
 
 Simply converts 15 character id into a 18 character id.
-Check out http://salesforce.stackexchange.com/questions/1653/what-are-salesforce-ids-composed-of for details.
+Visit [Salesforce StackExchange](http://salesforce.stackexchange.com/questions/1653/what-are-salesforce-ids-composed-of) article for details.
 
 ## Usage:
 

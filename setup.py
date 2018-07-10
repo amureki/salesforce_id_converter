@@ -1,12 +1,8 @@
 from setuptools import setup, find_packages
 
-required_packages = [
-    'requests',
-]
-
 setup(
     name='salesforce_id_converter',
-    version='0.0.1',
+    version='0.1.0',
     description='Convert 15 character Salesforce id into a 18 character id',
     author='Rustem Saiargaliev',
     author_email='r.sayargaliev@gmail.com',
@@ -28,9 +24,8 @@ setup(
     packages=find_packages(exclude=['tests', 'tests.*']),
     entry_points={
         'console_scripts': [
-            'sfc = salesforce_id_converter.cli:main',
+            'sfc=salesforce_id_converter.cli:main',
         ],
     },
-    install_requires=required_packages,
     test_suite='tests',
 )

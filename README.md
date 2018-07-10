@@ -8,7 +8,7 @@ Visit [Salesforce StackExchange](http://salesforce.stackexchange.com/questions/1
 ## Usage:
 
 ```bash
-pip install sfc
+pip install salesforce_id_converter
 sfc 00558000001N0Ke
 ```
 

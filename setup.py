@@ -1,9 +1,16 @@
+from os import path
 from setuptools import setup, find_packages
+
+root_dir = path.abspath(path.dirname(__file__))
+with open(path.join(root_dir, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name='salesforce_id_converter',
-    version='0.1.1',
     description='Convert 15 character Salesforce id into a 18 character id',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    version='0.1.2',
     author='Rustem Saiargaliev',
     author_email='r.sayargaliev@gmail.com',
     license='Apache-2',

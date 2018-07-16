@@ -10,7 +10,7 @@ setup(
     description='Convert 15 character Salesforce id into a 18 character id',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    version='0.1.2',
+    version='0.2.0',
     author='Rustem Saiargaliev',
     author_email='r.sayargaliev@gmail.com',
     license='Apache-2',

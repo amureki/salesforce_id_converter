@@ -2,9 +2,6 @@ from unittest import TestCase
 
 from salesforce_id_converter.converter import Converter, get_bit
 
-SALESFORCE_SHORT_ID = '00558000001N0Ke'
-SALESFORCE_LONG_ID = '00558000001N0KeAAK'
-
 
 class TestConverter(TestCase):
     def test_get_bit(self):
@@ -21,5 +18,12 @@ class TestConverter(TestCase):
             assert get_bit(char) == mapped
 
     def test_convert(self):
-        converter = Converter(short=SALESFORCE_SHORT_ID)
-        assert converter.convert() == SALESFORCE_LONG_ID
+        salesforce_test_ids = (
+            ('001A0000006Vm9u', '001A0000006Vm9uIAC'),
+            ('00558000001N0Ke', '00558000001N0KeAAK'),
+            ('00D0Q0000008aI9', '00D0Q0000008aI9UAI'),
+            ('0016E00000YbJrD', '0016E00000YbJrDQAV'),
+        )
+        for short_id, long_id in salesforce_test_ids:
+            converter = Converter(short=short_id)
+            assert converter.convert() == long_id

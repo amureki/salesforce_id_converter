@@ -10,6 +10,7 @@ branches:
   - master
 deploy:
   provider: pypi
+  distributions: "sdist bdist_wheel"
   on:
     tags: true
   user: amureki

@@ -1,6 +1,6 @@
 # Salesforce Id converter
 
-[![PyPI](https://img.shields.io/pypi/v/nine.svg)](https://pypi.org/project/salesforce_id_converter/)
+[![PyPI](https://img.shields.io/pypi/v/salesforce_id_converter.svg)](https://pypi.org/project/salesforce_id_converter/)
 [![GitHub license](https://img.shields.io/github/license/amureki/salesforce_id_converter.svg)](https://github.com/amureki/salesforce_id_converter/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/amureki/salesforce_id_converter.svg?branch=master)](https://travis-ci.org/amureki/salesforce_id_converter)
 

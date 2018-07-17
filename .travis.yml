@@ -5,10 +5,6 @@ python:
 - 3.6
 script:
 - python setup.py test
-branches:
-  only:
-  - master
-  - /^\d+\.\d+\.\d+$/
 deploy:
   provider: pypi
   distributions: "sdist bdist_wheel"

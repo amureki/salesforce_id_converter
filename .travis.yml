@@ -11,8 +11,10 @@ branches:
 deploy:
   provider: pypi
   distributions: "sdist bdist_wheel"
+  skip_existing: true
   on:
     tags: true
+    repo: amureki/salesforce_id_converter
   user: amureki
   password:
     secure: wLyIkd8XvEhYVPjp/MfboUAmEJOOHS1i1lVzQEHua5JNqgksBGF+4DWXjzgDNa0PBP94WIbyM6rhJdJSC1EgtAETVnj47i559Oli2YfcJisx+DqGIDvBqK0Oxu6dkJo4+E+DhSDy9s8jELZvqnPX4kpgzvt66efW13Zg6nTM+HRyl5g6wSUMTgGNaiG8eVvz+dZhcXaKQ/ZbBq9fXDCk5Jblz5KclsDOdPrdm8DUZLhQSB/C7YwVsTfRCoHxw0fbCnQng/ujK1H1mMUW2QtqcbbSFD3qk18vEXZ1VD14tuFpzTb3Hle9UThYKv+4oowzNW88D0Yk9QhYxA3UMskXaW48d1BTB/n+u4NtF5pm9f8DoG5oTShkvpvlbqs2QKtruv6C90QrhBk9GvFXisd+iIfukfKSedPTsTODY++aB2A44gGfenAfPxQ4UC27SyMdaXof8zGvvfU9kBWcpW4LelNxD/lfAJsKcY1uNg4LQMWqIsZYmEWEEly8P2u0v985mDRpcTKgAJnO0/rcq+el4uzq/UO0aFS8yD7raFxzFW/3lJPVYMNaK4UYKT2FD+ZwTjTmfYg1HGOs6L8R+r+Z459yoh/mnSp2eVccajZg0sXotzyl3L08FSeYkRZN5f9LObRsisSJ3VclBYTtM8PdC48NEiPkM5BLFTF0TJ8hIoY=
